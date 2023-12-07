@@ -22,19 +22,14 @@ public class enemyAttack : MonoBehaviour
         enemy = GetComponent<enemyMovement>();
         ren = GetComponent<Renderer>();
     }
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
         if (Vector3.Distance(transform.position, player.position) <= attackRange)
         {
-            Debug.Log("You die now");
-            ren.sharedMaterial = alertMaterial; // set destination to player
-            enemy.badGuy.SetDestination(player.position);
+            ren.sharedMaterial = alertMaterial;
+            enemy.badGuy.SetDestination(player.position); // set destination to player
             foundPlayer = true;
         }
         else if (foundPlayer)

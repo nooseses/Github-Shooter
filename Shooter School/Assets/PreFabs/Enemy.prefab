@@ -66,7 +66,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: a0d31f8435bc3804ca76c2381892b784, type: 2}
-  - {fileID: 2100000, guid: a0d31f8435bc3804ca76c2381892b784, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -118,7 +117,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4949431475970012644}
-  m_Enabled: 0
+  m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5000001
   m_Speed: 7
@@ -140,7 +139,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4949431475970012644}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e4d7f1e8d2e9f5468aa1694f64e73a1, type: 3}
   m_Name: 
@@ -159,13 +158,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4949431475970012644}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37bc0f95016f12c43adabe79ea3909c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  attackRange: 4
+  player: {fileID: 1945362024614321774}
+  attackRange: 10
   defaultMaterial: {fileID: 2100000, guid: a0d31f8435bc3804ca76c2381892b784, type: 2}
   alertMaterial: {fileID: 2100000, guid: 4f55f73e8fd3ba649a0e9912fea94b26, type: 2}
   ren: {fileID: 7634518294042622478}
