@@ -7,10 +7,6 @@ public class enemyAttack : MonoBehaviour
     public GameObject player;
     public float attackRange = 10f;
     public float killRange = 1.0f;
-    public float attackCooldown = 3f;
-
-
-
 
     private enemyMovement enemy;
     private playerHealth healthScript;
@@ -49,10 +45,6 @@ public class enemyAttack : MonoBehaviour
         if (Vector3.Distance(transform.position, player.transform.position) <= killRange)
         {
             healthScript.health--;
-        }
-        if (attackCooldown > 0)
-        {
-            attackCooldown -= Time.deltaTime;
         }
     }
 }
