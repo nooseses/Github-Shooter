@@ -18,21 +18,21 @@ public class playerHealth : MonoBehaviour
 
     void Update()
     {
-
+        // cant go over max health
         if (health > numOfHearts)
             health = numOfHearts;
 
 
         for (int i = 0; i < hearts.Length; i++)
         {
-            if (i < health) {
+            if (i < health) // if health is more than 0 it uses a full heart sprite
+            {
                 hearts[i].sprite = fullHeart;
             }
             else
             {
                 hearts[i].sprite = emptyHeart;
             }
-
 
             if (i < numOfHearts)
             {
@@ -43,7 +43,5 @@ public class playerHealth : MonoBehaviour
                 hearts[i].enabled = false;
             }
         }
-
     }
-
 }
