@@ -17,6 +17,11 @@ public class playerHealth : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked; // gets rid of the menu mouse
+        Cursor.visible = false;
+    }
     void Update()
     {
         // cant go over max health
@@ -46,6 +51,8 @@ public class playerHealth : MonoBehaviour
             if (health <= 0)
             {
                 SceneManager.LoadScene("Menu");
+                Cursor.lockState = CursorLockMode.Confined; //turns cursor back on so you can use te menu
+                Cursor.visible = true;
             }
         }
     }
