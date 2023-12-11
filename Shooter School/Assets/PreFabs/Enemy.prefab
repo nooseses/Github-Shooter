@@ -165,6 +165,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1945362024614321774}
   attackRange: 10
+  killRange: 1
+  cooldown: 3
+  lastTimeAttacked: -9999
   defaultMaterial: {fileID: 2100000, guid: a0d31f8435bc3804ca76c2381892b784, type: 2}
   alertMaterial: {fileID: 2100000, guid: 4f55f73e8fd3ba649a0e9912fea94b26, type: 2}
   ren: {fileID: 7634518294042622478}

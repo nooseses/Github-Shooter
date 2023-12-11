@@ -5,12 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class menuScript : MonoBehaviour
 {
-    public string gameScene;
-
-
-
     public void changeScene()
     {
-        SceneManager.LoadScene(gameScene);
+        SceneManager.LoadScene("Controls");
     }
 }
